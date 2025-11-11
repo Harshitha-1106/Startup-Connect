@@ -1,73 +1,92 @@
-# Welcome to your Lovable project
+# Momentum Link - Startup Connect Platform
 
-## Project info
+A modern platform connecting startups with investors, mentors, and users to accelerate growth through data-driven insights and networking.
 
-**URL**: https://lovable.dev/projects/653326dd-f04b-46fc-beca-0d25a9928d2f
+## Table of Contents
 
-## How can I edit this code?
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Available Scripts](#available-scripts)
+- [Project Structure](#project-structure)
+- [Features](#features)
+- [Contributing](#contributing)
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+| Category          | Technology                  |
+|-------------------|-----------------------------|
+| **Frontend**     | React 18, TypeScript, Vite |
+| **UI Framework** | shadcn/ui, Tailwind CSS    |
+| **Backend**      | Supabase                   |
+| **State Management** | React Query            |
+| **Routing**      | React Router DOM          |
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/653326dd-f04b-46fc-beca-0d25a9928d2f) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v18 or higher)
+- npm or yarn
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd momentum-link
+   ```
 
-Follow these steps:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+   The application will run on `http://localhost:4205`.
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Available Scripts
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+| Script          | Description                  |
+|-----------------|------------------------------|
+| `npm run dev`  | Start development server    |
+| `npm run build` | Build for production        |
+| `npm run build:dev` | Build for development   |
+| `npm run lint` | Run ESLint                  |
+| `npm run preview` | Preview production build    |
+
+## Project Structure
+
+```
+momentum-link/
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # Reusable UI components
+│   ├── pages/             # Page components
+│   ├── hooks/             # Custom React hooks
+│   ├── lib/               # Utility functions
+│   └── integrations/      # External service integrations
+├── supabase/              # Supabase configuration
+└── package.json
 ```
 
-**Edit a file directly in GitHub**
+## Features
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- User authentication (Login/Signup)
+- Dashboard for managing connections
+- Investor, Mentor, and User profiles
+- Networking platform
+- Responsive design
 
-**Use GitHub Codespaces**
+## Contributing
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/653326dd-f04b-46fc-beca-0d25a9928d2f) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Run tests and linting
+5. Submit a pull request
